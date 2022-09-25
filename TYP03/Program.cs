@@ -24,7 +24,6 @@ static double[] FeldVereinigen(double[] array1, double[] array2)
 }
 
 double[] array3 = FeldVereinigen(array1, array2);
-for (int i = 0; i < array3.Length; i++)
-{
-    Console.WriteLine(array3[i]);
-}
+
+var output = String.Join(" ; " , array3);
+Console.WriteLine(output);
